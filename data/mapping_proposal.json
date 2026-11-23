@@ -1,0 +1,287 @@
+{
+ "mapping": [
+  {
+   "tag": "TI-1501",
+   "signal": "XMEAS(9)",
+   "conversion": "degF_to_degC",
+   "confidence": 0.9
+  },
+  {
+   "tag": "TI-1301",
+   "signal": "XMEAS(11)",
+   "conversion": "degF_to_degC",
+   "confidence": 0.85
+  },
+  {
+   "tag": "TI-1201",
+   "signal": "XMEAS(9)",
+   "conversion": "degF_to_degC",
+   "confidence": 0.4
+  },
+  {
+   "tag": "TI-1302",
+   "signal": "XMEAS(22)",
+   "conversion": "degF_to_degC",
+   "confidence": 0.8
+  },
+  {
+   "tag": "TI-1202",
+   "signal": "XMEAS(21)",
+   "conversion": "degF_to_degC",
+   "confidence": 0.8
+  },
+  {
+   "tag": "AI-1513",
+   "signal": "XMEAS(40)",
+   "conversion": "none",
+   "confidence": 0.9
+  },
+  {
+   "tag": "AI-1514",
+   "signal": "XMEAS(41)",
+   "conversion": "none",
+   "confidence": 0.9
+  },
+  {
+   "tag": "AI-1512",
+   "signal": "XMEAS(39)",
+   "conversion": "none",
+   "confidence": 0.9
+  },
+  {
+   "tag": "AI-1510",
+   "signal": "XMEAS(37)",
+   "conversion": "none",
+   "confidence": 0.9
+  },
+  {
+   "tag": "AI-1511",
+   "signal": "XMEAS(38)",
+   "conversion": "none",
+   "confidence": 0.9
+  },
+  {
+   "tag": "AI-1413",
+   "signal": "XMEAS(37)",
+   "conversion": "none",
+   "confidence": 0.4
+  },
+  {
+   "tag": "AI-1415",
+   "signal": "XMEAS(39)",
+   "conversion": "none",
+   "confidence": 0.4
+  },
+  {
+   "tag": "AI-1412",
+   "signal": "XMEAS(38)",
+   "conversion": "none",
+   "confidence": 0.4
+  },
+  {
+   "tag": "AI-1410",
+   "signal": "XMEAS(23)",
+   "conversion": "none",
+   "confidence": 0.4
+  },
+  {
+   "tag": "AI-1411",
+   "signal": "XMEAS(24)",
+   "conversion": "none",
+   "confidence": 0.4
+  },
+  {
+   "tag": "AI-1414",
+   "signal": "XMEAS(40)",
+   "conversion": "none",
+   "confidence": 0.4
+  },
+  {
+   "tag": "AI-1416",
+   "signal": "XMEAS(41)",
+   "conversion": "none",
+   "confidence": 0.4
+  },
+  {
+   "tag": "AI-1417",
+   "signal": "XMEAS(41)",
+   "conversion": "none",
+   "confidence": 0.4
+  },
+  {
+   "tag": "FI-1101",
+   "signal": "XMEAS(1)",
+   "conversion": "none",
+   "confidence": 0.95
+  },
+  {
+   "tag": "FI-1102",
+   "signal": "XMEAS(2)",
+   "conversion": "t/h_to_kg/h",
+   "confidence": 0.9
+  },
+  {
+   "tag": "FI-1103",
+   "signal": "XMEAS(3)",
+   "conversion": "t/h_to_kg/h",
+   "confidence": 0.9
+  },
+  {
+   "tag": "FI-1104",
+   "signal": "XMV(4)",
+   "conversion": "none",
+   "confidence": 0.85
+  },
+  {
+   "tag": "FI-1201",
+   "signal": "XMEAS(6)",
+   "conversion": "none",
+   "confidence": 0.85
+  },
+  {
+   "tag": "FI-1301",
+   "signal": "XMEAS(14)",
+   "conversion": "none",
+   "confidence": 0.85
+  },
+  {
+   "tag": "FI-1401",
+   "signal": "XMEAS(5)",
+   "conversion": "none",
+   "confidence": 0.85
+  },
+  {
+   "tag": "FI-1402",
+   "signal": "XMEAS(10)",
+   "conversion": "none",
+   "confidence": 0.85
+  },
+  {
+   "tag": "FI-1501",
+   "signal": "XMEAS(14)",
+   "conversion": "none",
+   "confidence": 0.8
+  },
+  {
+   "tag": "FI-1502",
+   "signal": "XMEAS(19)",
+   "conversion": "t/h_to_kg/h",
+   "confidence": 0.8
+  },
+  {
+   "tag": "FI-1502",
+   "signal": "XMEAS(19)",
+   "conversion": "t/h_to_kg/h",
+   "confidence": 0.8
+  },
+  {
+   "tag": "JI-1401",
+   "signal": "XMEAS(20)",
+   "conversion": "none",
+   "confidence": 0.9
+  },
+  {
+   "tag": "LI-1301",
+   "signal": "XMEAS(12)",
+   "conversion": "none",
+   "confidence": 0.9
+  },
+  {
+   "tag": "LI-1501",
+   "signal": "XMEAS(15)",
+   "conversion": "none",
+   "confidence": 0.9
+  },
+  {
+   "tag": "LI-1201",
+   "signal": "XMEAS(8)",
+   "conversion": "none",
+   "confidence": 0.9
+  },
+  {
+   "tag": "PI-1301",
+   "signal": "XMEAS(13)",
+   "conversion": "bar_to_kPa",
+   "confidence": 0.9
+  },
+  {
+   "tag": "PI-1501",
+   "signal": "XMEAS(13)",
+   "conversion": "bar_to_kPa",
+   "confidence": 0.4
+  },
+  {
+   "tag": "PI-1201",
+   "signal": "XMEAS(13)",
+   "conversion": "bar_to_kPa",
+   "confidence": 0.4
+  },
+  {
+   "tag": "TV-1202",
+   "signal": "XMV(10)",
+   "conversion": "none",
+   "confidence": 0.85
+  },
+  {
+   "tag": "TV-1302",
+   "signal": "XMV(11)",
+   "conversion": "none",
+   "confidence": 0.85
+  },
+  {
+   "tag": "FV-1101",
+   "signal": "XMV(3)",
+   "conversion": "none",
+   "confidence": 0.85
+  },
+  {
+   "tag": "FV-1102",
+   "signal": "XMV(6)",
+   "conversion": "none",
+   "confidence": 0.85
+  },
+  {
+   "tag": "FV-1103",
+   "signal": "XMV(2)",
+   "conversion": "none",
+   "confidence": 0.85
+  },
+  {
+   "tag": "FV-1104",
+   "signal": "XMV(4)",
+   "conversion": "none",
+   "confidence": 0.85
+  },
+  {
+   "tag": "FV-1301",
+   "signal": "XMV(7)",
+   "conversion": "none",
+   "confidence": 0.85
+  },
+  {
+   "tag": "FV-1402",
+   "signal": "XMV(6)",
+   "conversion": "none",
+   "confidence": 0.4
+  },
+  {
+   "tag": "FV-1501",
+   "signal": "XMV(8)",
+   "conversion": "none",
+   "confidence": 0.85
+  },
+  {
+   "tag": "FV-1502",
+   "signal": "XMV(9)",
+   "conversion": "none",
+   "confidence": 0.85
+  },
+  {
+   "tag": "HV-1401",
+   "signal": "XMV(5)",
+   "conversion": "none",
+   "confidence": 0.85
+  }
+ ],
+ "model": "openai/gpt-oss-120b (Groq), temperature 0"
+}

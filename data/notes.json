@@ -1,0 +1,229 @@
+{
+ "1": {
+  "summary": "At 18 minutes after the fault start, stripper pressure (XMEAS(16)) rose 27.7\u202f\u03c3 and compressor work (XMEAS(20)) rose 13.1\u202f\u03c3, indicating a rapid up\u2011trend in upstream units. This pattern matches the historic incident where an A/C feed ratio step occurred while B composition stayed constant.",
+  "matched_incident": 1,
+  "unit": "Feeds",
+  "signals": [
+   "XMEAS(16)",
+   "XMEAS(20)"
+  ],
+  "would_prove_wrong": "If the A/C feed ratio at stream 4 is measured unchanged, the feed\u2011ratio step hypothesis would be disproved.",
+  "next_check": "Check the A/C feed ratio on stream 4 immediately to confirm any step change.",
+  "source": "model",
+  "checks": "passed"
+ },
+ "2": {
+  "summary": "A deviation was detected 48\u202fmin after fault start, marked by a sharp rise in purge gas analysis (component\u202fB) (XMEAS(30)) followed by increased purge rate and valve position. The pattern matches past fault\u202f2 (B composition step, A/C ratio constant) in the Feeds unit.",
+  "matched_incident": 2,
+  "unit": "Feeds",
+  "signals": [
+   "XMEAS(30)",
+   "XMEAS(10)",
+   "XMV(6)"
+  ],
+  "would_prove_wrong": "If the feed composition analysis (component\u202fB) remains within normal limits despite the observed purge signals, the fault match would be incorrect.",
+  "next_check": "Check the current feed composition for component\u202fB in the Feeds area to confirm the suspected B\u2011composition step.",
+  "source": "model",
+  "checks": "passed"
+ },
+ "4": {
+  "summary": "A deviation was detected 6 minutes after the fault start in the Reactor cooling water flow (XMV(10)), rising upward with a magnitude of 11.7\u202f\u03c3. This aligns with a known fault (fault\u202f4) related to a reactor cooling water inlet temperature step.",
+  "matched_incident": 4,
+  "unit": "Reactor cooling",
+  "signals": [
+   "XMV(10)"
+  ],
+  "would_prove_wrong": "If the reactor cooling water temperature remains unchanged, contradicting the expected temperature step cause.",
+  "next_check": "Confirm the actual cooling water flow rate and temperature in the Reactor cooling unit.",
+  "source": "model",
+  "checks": "passed"
+ },
+ "5": {
+  "summary": "At ~48 minutes after the fault start, reactor, separator, and stripper pressures rose sharply (up to ~15\u03c3). Later, compressor work dropped and temperatures rose, indicating a system-wide pressure upset likely linked to a condenser cooling water inlet temperature step.",
+  "matched_incident": 5,
+  "unit": "Separator and condenser",
+  "signals": [
+   "XMEAS(7)",
+   "XMEAS(13)",
+   "XMEAS(16)"
+  ],
+  "would_prove_wrong": "If the condenser cooling water inlet temperature is measured and remains at its setpoint, the assumed cause is disproved.",
+  "next_check": "Measure the condenser cooling water inlet temperature to confirm any step change.",
+  "source": "model",
+  "checks": "passed"
+ },
+ "6": {
+  "summary": "A significant drop in A feed (stream 1) was detected immediately, followed by a large increase in the feed valve opening and downstream compressor disturbances. The pattern matches the known fault 6 (A feed loss) in the Feeds unit.",
+  "matched_incident": 6,
+  "unit": "Feeds",
+  "signals": [
+   "XMEAS(1)",
+   "XMV(3)"
+  ],
+  "would_prove_wrong": "If the measured flow rate of A feed (stream 1) remains at normal levels despite the sensor deviations, the feed loss hypothesis would be disproved.",
+  "next_check": "Confirm the actual mass flow of A feed (stream 1) with a calibrated flow meter.",
+  "source": "model",
+  "checks": "passed"
+ },
+ "7": {
+  "summary": "At the start of run\u201107 a large drop in the A and C feed (XMEAS(4) down 13.2\u202f\u03c3) was detected immediately, followed by rapid pressure increases in the reactor, separator and stripper (up ~28\u202f\u03c3) and a rise in reactor cooling water outlet temperature. The pattern matches fault\u202f7 (C header pressure loss in the feed unit).",
+  "matched_incident": 7,
+  "unit": "Feeds",
+  "signals": [
+   "XMEAS(4)",
+   "XMV(4)"
+  ],
+  "would_prove_wrong": "If the A and C feed flow valve (XMV(4)) is found to be closed or unchanged, the assumed feed loss would be disproved.",
+  "next_check": "Inspect the A and C feed flow valve position and operation first.",
+  "source": "model",
+  "checks": "passed"
+ },
+ "8": {
+  "summary": "At ~84 minutes after the fault start, both feed analysis signals showed significant deviations (component C down 17.3\u03c3, component A up 10.8\u03c3) in the Feeds unit, matching the pattern of fault 2 (B composition step, A/C ratio constant). This suggests a likely issue with the B composition step affecting feed streams.",
+  "matched_incident": 2,
+  "unit": "Feeds",
+  "signals": [
+   "XMEAS(25)",
+   "XMEAS(23)"
+  ],
+  "would_prove_wrong": "If the feed composition analyzers are later found to be calibrated incorrectly and the true feed composition is within normal limits.",
+  "next_check": "Inspect the B composition step (stream 4) and verify the A/C ratio set points and valve positions.",
+  "source": "model",
+  "checks": "passed"
+ },
+ "10": {
+  "summary": "A significant upward deviation was observed in the Stripper temperature (XMEAS(18)), reaching 10.7\u202f\u03c3 291\u202fminutes after the fault onset. This is the earliest and largest signal, indicating a likely issue in the Stripper unit.",
+  "matched_incident": null,
+  "unit": "Stripper",
+  "signals": [
+   "XMEAS(18)"
+  ],
+  "would_prove_wrong": "If the Stripper temperature returns to within normal limits within the next 10\u202fminutes despite no corrective action, the assumed deviation may be a false alarm.",
+  "next_check": "Check the Stripper temperature sensor reading and the status of the Stripper steam valve for any abnormal operation.",
+  "source": "model",
+  "checks": "passed"
+ },
+ "11": {
+  "summary": "At 33\u202fmin after the fault onset the reactor cooling water flow (XMV(10)) spiked upward to 17.1\u202f\u03c3 above normal, and later the reactor temperature (XMEAS(9)) dropped 15.5\u202f\u03c3. This pattern matches fault\u202f11 (reactor cooling water inlet temperature random variation) in the library.",
+  "matched_incident": 11,
+  "unit": "Reactor cooling",
+  "signals": [
+   "XMV(10)",
+   "XMEAS(9)"
+  ],
+  "would_prove_wrong": "If the cooling water inlet temperature remains stable and no random variation is observed, the conclusion would be wrong.",
+  "next_check": "Check the reactor cooling water inlet temperature sensor reading and trend for unexpected variations.",
+  "source": "model",
+  "checks": "passed"
+ },
+ "12": {
+  "summary": "At ~63\u202fmin after the fault start, both separator temperature (XMEAS(11)) and condenser cooling water outlet temperature (XMEAS(22)) dropped sharply, with deviations of 37.9\u202f\u03c3 and 28.4\u202f\u03c3 respectively. This pattern matches a known incident (fault\u202f12) caused by random variation in the condenser cooling water inlet temperature in the Separator and condenser unit.",
+  "matched_incident": 12,
+  "unit": "Separator and condenser",
+  "signals": [
+   "XMEAS(11)",
+   "XMEAS(22)"
+  ],
+  "would_prove_wrong": "If the condenser cooling water inlet temperature is measured and found to be stable (no variation) during the event, the assumed cause would be disproved.",
+  "next_check": "Check the condenser cooling water inlet temperature sensor reading and its recent trend.",
+  "source": "model",
+  "checks": "passed"
+ },
+ "13": {
+  "summary": "At ~141\u202fmin after the fault start, major pressure drops were observed in the Stripper (XMEAS(16)), Reactor (XMEAS(7)) and Separator/Condenser (XMEAS(13)), each deviating ~39\u202f\u03c3 below normal. The deviations then propagated to steam flow and valve actions in the Stripper later on.",
+  "matched_incident": null,
+  "unit": "Stripper",
+  "signals": [
+   "XMEAS(16)",
+   "XMEAS(7)",
+   "XMEAS(13)"
+  ],
+  "would_prove_wrong": "If the pressure readings return to within 1\u202f\u03c3 of normal within the next 10\u202fminutes, the assumed fault may be incorrect.",
+  "next_check": "Inspect the Stripper steam valve (XMV(9)) and verify steam flow to confirm the cause of the pressure drop.",
+  "source": "model",
+  "checks": "passed"
+ },
+ "14": {
+  "summary": "At ~6\u202fmin after the fault onset the reactor cooling water outlet temperature rose 19.7\u202f\u03c3, followed by large increases in cooling water flow (24.0\u202f\u03c3) and reactor temperature (23.6\u202f\u03c3) by 15\u202fmin. This pattern matches fault\u202f14, a sticking reactor\u2011cooling water valve, affecting the Reactor cooling unit.",
+  "matched_incident": 14,
+  "unit": "Reactor cooling",
+  "signals": [
+   "XMEAS(21)",
+   "XMV(10)",
+   "XMEAS(9)"
+  ],
+  "would_prove_wrong": "If the cooling water valve is verified to be fully open and operating normally, the sticking\u2011valve hypothesis would be disproved.",
+  "next_check": "Inspect the reactor cooling water valve position and actuation mechanism as the first check.",
+  "source": "model",
+  "checks": "passed"
+ },
+ "16": {
+  "summary": "A significant upward deviation was observed in Stripper steam flow (XMEAS(19)), reaching 9.9\u202f\u03c3 588\u202fminutes after the fault onset. This pattern matches a historical incident (fault\u202f7) linked to C header pressure loss in the Feeds unit.",
+  "matched_incident": 7,
+  "unit": "Feeds",
+  "signals": [
+   "XMEAS(19)"
+  ],
+  "would_prove_wrong": "If the stripper steam valve (XMV(9)) shows no change from its normal position, the assumed pressure loss cause would be contradicted.",
+  "next_check": "Inspect the stripper steam valve position and operation first.",
+  "source": "model",
+  "checks": "passed"
+ },
+ "17": {
+  "summary": "At 69\u202fminutes after the fault start, the reactor cooling water outlet temperature (XMEAS(21)) dropped sharply, deviating 118.5\u202f\u03c3 below normal. This early, large negative deviation matches fault\u202f17 from the library with high similarity.",
+  "matched_incident": 17,
+  "unit": "Reactor cooling",
+  "signals": [
+   "XMEAS(21)"
+  ],
+  "would_prove_wrong": "If the reactor cooling water outlet temperature returns to within normal limits within a few minutes and no downstream effects are observed, the assumed fault would be incorrect.",
+  "next_check": "Inspect the reactor cooling water valve for sticking or failure, as valve issues are a common cause of similar deviations.",
+  "source": "model",
+  "checks": "passed"
+ },
+ "18": {
+  "summary": "At ~261\u202fmin after the fault start, the condenser cooling water outlet temperature (XMEAS(22)) dropped sharply (\u201150\u202f\u03c3) followed by a separator temperature drop (XMEAS(11), \u201130\u202f\u03c3) and later a separator pressure rise (XMEAS(13), +56\u202f\u03c3). These deviations match the pattern of past fault\u202f18.",
+  "matched_incident": 18,
+  "unit": "Separator and condenser",
+  "signals": [
+   "XMEAS(22)",
+   "XMEAS(11)",
+   "XMEAS(13)"
+  ],
+  "would_prove_wrong": "If the condenser cooling water flow rate remains stable and the temperature returns to normal within a few minutes, the assumed fault pattern would be incorrect.",
+  "next_check": "Check the condenser cooling water flow and inlet temperature for any sudden changes.",
+  "source": "model",
+  "checks": "passed"
+ },
+ "20": {
+  "summary": "A significant down\u2011trend was detected in the compressor recycle valve (21.5\u202f\u03c3) followed by drops in separator pressure (14\u202f\u03c3) and compressor work (19\u202f\u03c3). The deviation began around minute 244\u2011246 and was detected 252\u202fmin after fault start.",
+  "matched_incident": 20,
+  "unit": "Recycle, compressor and purge",
+  "signals": [
+   "XMV(5)",
+   "XMEAS(13)",
+   "XMEAS(20)"
+  ],
+  "would_prove_wrong": "If the valve position and compressor work return to normal levels within the next few minutes, the assumed fault would be disproved.",
+  "next_check": "Inspect the compressor recycle valve actuator and position signal for mechanical or control failure.",
+  "source": "model",
+  "checks": "passed"
+ },
+ "21": {
+  "summary": "Significant down\u2011trends have been observed in stripper pressure, reactor pressure, and separator pressure, with deviations up to 9\u202f\u03c3. Additional drops in reactor level, stripper steam flow, and the stripper steam valve follow, indicating a broad pressure loss across the front\u2011end units.",
+  "matched_incident": null,
+  "unit": "Stripper",
+  "signals": [
+   "XMEAS(16)",
+   "XMEAS(7)",
+   "XMEAS(13)",
+   "XMEAS(8)",
+   "XMEAS(19)",
+   "XMV(9)"
+  ],
+  "would_prove_wrong": "If the pressures and steam flow return to within 1\u202f\u03c3 of normal within a few minutes without any corrective action, the assumed deviation would be disproved.",
+  "next_check": "Inspect the stripper steam valve (XMV(9)) for proper actuation and any blockage in the steam supply line.",
+  "source": "model",
+  "checks": "passed"
+ }
+}

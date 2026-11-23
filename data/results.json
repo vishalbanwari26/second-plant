@@ -1,0 +1,68 @@
+{
+ "plant_a": {
+  "runs": 21,
+  "detected": 17,
+  "missed": [
+   3,
+   9,
+   15,
+   19
+  ],
+  "false_alarms_normal_run": 0,
+  "cause_curve": [
+   {
+    "hours_after_detection": 1,
+    "top1": 11,
+    "top3": 12,
+    "runs": 17
+   },
+   {
+    "hours_after_detection": 2,
+    "top1": 12,
+    "top3": 13,
+    "runs": 17
+   },
+   {
+    "hours_after_detection": 4,
+    "top1": 14,
+    "top3": 15,
+    "runs": 17
+   },
+   {
+    "hours_after_detection": 8,
+    "top1": 13,
+    "top3": 15,
+    "runs": 17
+   }
+  ],
+  "median_detection_minutes": 63
+ },
+ "mapping": {
+  "tags": 52,
+  "model_right": 32,
+  "model_proposed": 46,
+  "checked_right": 51,
+  "held_back": 1,
+  "status_counts": {
+   "frozen": 1,
+   "ok": 31,
+   "remap": 19,
+   "unit": 1
+  },
+  "model": "openai/gpt-oss-120b (Groq), temperature 0"
+ },
+ "rollout": {
+  "blind": {
+   "signals_fed": 34,
+   "runs_with_false_alarm_before_fault": 21,
+   "named_right": 5,
+   "named_total": 21
+  },
+  "approved": {
+   "signals_fed": 51,
+   "runs_with_false_alarm_before_fault": 0,
+   "named_right": 13,
+   "named_total": 17
+  }
+ }
+}
